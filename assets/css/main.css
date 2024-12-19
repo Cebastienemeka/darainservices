@@ -1,0 +1,560 @@
+ /* Universal font style */
+ body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* ===========================   NAVBAR SECTION  =================================== */
+
+/* Existing navbar styles */
+.navbar {
+    background-color: #1B156C;
+    padding: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    position: relative; /* Add position relative initially */
+    z-index: 1000; /* Ensure it's above other elements */
+    transition: top 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add sticky class styles */
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow when navbar becomes sticky */
+    transition: top 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Remaining styles (no changes needed) */
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar-nav {
+    margin-left: 4em;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff9900;
+}
+
+.btn-orange {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-orange:hover {
+    background-color: #e68a00;
+    transform: scale(1.05);
+}
+
+.btn-outline-custom {
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    background-color: #fff;
+    color: #0e0b5c;
+}
+
+.auth-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Custom hamburger button color */
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .navbar {
+        width: 100%;
+        border-radius: 0;
+    }
+    .nav-item {
+        margin-bottom: 0.5rem;
+    }
+    .navbar-nav {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .auth-buttons {
+        margin-left: 0;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem; 
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar-nav {
+    margin-left: 4em;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff9900;
+}
+
+.btn-orange {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-orange:hover {
+    background-color: #e68a00;
+    transform: scale(1.05);
+}
+
+.btn-outline-custom {
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    background-color: #fff;
+    color: #0e0b5c;
+}
+
+.auth-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Custom hamburger button color */
+.navbar-toggler-icon {
+    background-color: #fff;  
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .navbar {
+        width: 100%;
+        border-radius: 0;
+    }
+    .nav-item {
+        margin-bottom: 0.5rem;
+    }
+    .navbar-nav {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .auth-buttons {
+        margin-left: 0;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+
+/* ===========================   HERO SECTION  =================================== */
+
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+    padding: 10px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-create {
+    background-color: #f16821;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-create:hover {
+    background-color: #d65d1e;
+}
+
+.btn-get-app {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #333333;
+}
+
+.btn-get-app:hover {
+    background-color: #f8f9fa;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    position: relative; 
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 16px;
+    border-top: 20px solid #FFDEB9;  
+    border-right: 20px solid #FFDEB9;
+    padding-top: 0px;
+    padding-right: 0px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 426px) {
+    .hero-buttons .btn {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+/* ======================== ABOUT SECTION ============================ */
+.about-section {
+    overflow: hidden;
+}
+
+/* Equal height for image and text */
+.about-image, .about-text {
+    min-height: 400px;
+}
+
+.about-image img {
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.about-image:hover img {
+    transform: scale(1.05); 
+}
+
+.btn-learn-more {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn-learn-more:hover {
+    background-color: #e65b00; 
+    transform: translateY(-3px); 
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .about-text {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .row {
+        flex-direction: column-reverse
+    }
+}
+
+@media (max-width: 576px) {
+    .about-image,
+    .about-text {
+        min-height: 300px; /* Adjust height for very small screens */
+    }
+
+    h2 {
+        font-size: 2rem; /* Smaller heading */
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+/* ======================== FINANCIAL SERVICES SECTION ============================ */
+
+
+    .financial-services h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #1B156C;
+    }
+
+    .highlight-text {
+        color: #ff6c00;
+    }
+
+    .card {
+        border: none;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 40px 150px rgba(0, 0, 0, 0.2);
+    }
+
+    .icon img {
+        width: 50px;
+        height: 50px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover .icon img {
+        transform: rotate(15deg) scale(1.1);
+    }
+
+    .icon i {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover .icon i {
+        transform: scale(1.1) rotate(10deg);
+    }
+
+    .text-muted {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    @media (max-width: 767px) {
+        .card {
+            margin: 0 auto;
+        }
+    }
+
+
+
+/* ======================== HOW IT WORKS ============================ */
+
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.step-card {
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    min-height: 200px; 
+    padding: 30px 20px; 
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.step-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 15px; /* Space between number and text */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.step-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 5px; /* Align text neatly */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .step-card {
+        min-height: 180px; /* Smaller height for small screens */
+    }
+
+    .step-number {
+        font-size: 1.8rem;
+        width: 40px;
+        height: 40px;
+    }
+
+    .step-text {
+        font-size: 1rem;
+    }
+}
+
+/* ======================== FINANCIAL FREEDOM ============================ */
+
+/* Background gradient */
+.financial-freedom {
+    background: linear-gradient(to right, #FFE8CE, #E5E3FF);
+    padding: 3rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+/* Title styling */
+.financial-freedom h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Button styles */
+.btn-orange {
+    background-color: #FF8800;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.btn-orange:hover {
+    background-color: #e77e00;
+    color: #fff;
+}
+
+.btn-outline-dark {
+    border: 1px solid #000;
+    color: #000;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 0.6rem 1.2rem;
+}
+
+.btn-outline-dark:hover {
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+/* Responsive spacing */
+@media (max-width: 576px) {
+    .financial-freedom h2 {
+        font-size: 1.5rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* =================================================== */
+
+/* Quick Links Hover Effect For Footer Quick Links*/
+.list-unstyled a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    text-decoration: none; 
+    color: #fff;
+}
+
+.list-unstyled a:hover {
+    color: #FF8801;
+}
+
